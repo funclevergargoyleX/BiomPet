@@ -24,10 +24,6 @@ h3.div:hover {
   color:#006580;
 }
 
-a.div:hover {
-  color: #006580;
-}
-
 div.list-container {
   background-color: rgba(255, 255, 255, 0.075); 
   
@@ -63,7 +59,7 @@ div.list-container {
   transition: transform 0.25s ease;
 }
 
-/* Added hover rule */
 .blur-button:hover {
   transform: scale(1.25);
+  color: #006580;
 }
