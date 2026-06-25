@@ -21,6 +21,10 @@ h2.div:hover {
   color:#006580;
 }
 
+h3.div:hover {
+  color:#006580;
+}
+
 div.list-container {
   /* Semi-transparent background (White with 7.5% opacity) */
   background-color: rgba(255, 255, 255, 0.075); 
@@ -45,67 +49,30 @@ div.list-container {
   box-sizing: border-box;
 }
 
-div.list-container:hover {
-  /* Semi-transparent background (White with 7.5% opacity) */
-  background-color: rgba(255, 255, 255, 0.75); 
-  
-  /* Optional: Blurs the background image behind the box for readability */
-  backdrop-filter: blur(5px); 
-  
-  /* Removes centering and aligns the box to the left */
-  margin: 20px 0 20px 20px; 
-  
-  /* Keeps the box from stretching across the whole screen */
-  /* Adjust this percentage or pixel value to fit your content */
-  width: 40%;
-  max-width: 90%;
-
-  height: 20 px;
-  max-height: 50 px;
-
-  /* Structural essentials */
-  padding: 25px;
-  border-radius: 12px;
-  box-sizing: border-box;
-}
-
 /* Add this class right below your body styles */
-.blur-button {
-  display: inline-block;
-  width: 125px;
-  max-width: 300 px;
-  height: 50 px;
-  padding: 15px 20px;
-  color: #000000;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 500;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 25px 10px;
+.blur-button { 
+  display: inline-block; 
+  width: 125px; 
+  max-width: 300px; /* Fixed spacing typo */
+  height: 50px; /* Fixed spacing typo */
+  padding: 15px 20px; 
+  color: #000000; 
+  text-decoration: none; 
+  text-align: center; 
+  font-weight: 500; 
+  border-radius: 8px; 
+  background: rgba(255, 255, 255, 0.25); 
+  border: 1px solid rgba(255, 255, 255, 0.4); 
+  backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  margin: 25px 10px; 
+  transition: transform 0.3s ease; /* Added for smoothness */
 }
 
+/* Added hover rule */
 .blur-button:hover {
-  display: inline-block;
-  width: 150px;
-  max-width: 525 px;
-  height: 75 px;
-  padding: 15px 22.5px;
-  color: #006580;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 500;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 25px 10px;
+  transform: scale(1.05); /* Grows the button by 5% */
 }
 
 .blur-button-os {
@@ -118,26 +85,8 @@ div.list-container:hover {
   text-align: center;
   font-weight: 500;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 25px 10px;
-}
-
-.blur-button-os:hover {
-  display: inline-block;
-  width: 275 px;
-  height: 75 px;
-  padding: 15px 22.5px;
-  color: #006580;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 500;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
