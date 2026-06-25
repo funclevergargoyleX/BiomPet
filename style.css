@@ -24,6 +24,10 @@ h3.div:hover {
   color:#006580;
 }
 
+a.div:hover {
+  color: #006580;
+}
+
 div.list-container {
   background-color: rgba(255, 255, 255, 0.075); 
   
