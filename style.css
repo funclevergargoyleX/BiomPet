@@ -72,23 +72,5 @@ div.list-container {
 
 /* Added hover rule */
 .blur-button:hover {
-  transform: scale(1.05); /* Grows the button by 5% */
-}
-
-.blur-button-os {
-  display: inline-block;
-  width: 250px;
-  height: 50 px;
-  padding: 15px 20px;
-  color: #000000;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 500;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 25px 10px;
+  transform: scale(1.25); /* Grows the button by 25% */
 }
